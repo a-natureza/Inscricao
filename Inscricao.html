@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Doação de Sangue</title>
+</head>
+<body>
+
+    <h1>Formulário de Doação de Sangue</h1>
+
+    <form action="#" method="post">
+
+        <!-- Campo de Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <br>
+
+        <!-- Campo de CPF -->
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" max="99999999999" required>
+
+        <br>
+
+        <!-- Tipo de Sangue -->
+        <label for="tipoSangue">Tipo de Sangue:</label>
+        <select id="tipoSangue" name="tipoSangue" required>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+
+        <br>
+
+        <!-- Data e Hora para Agendamento -->
+        <label for="dataAgendamento">Data e Hora para Agendamento:</label>
+        <input type="datetime-local" id="dataAgendamento" name="dataAgendamento" required>
+
+        <br>
+
+        <!-- Botões -->
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
